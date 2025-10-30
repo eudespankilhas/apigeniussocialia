@@ -4,6 +4,14 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    port: 3000,
+    strictPort: true,
+    open: true
+  },
+  preview: {
+    port: 3000
+  },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
     alias: {
