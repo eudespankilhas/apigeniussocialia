@@ -1,0 +1,18 @@
+// config/rate-limits.js
+module.exports = {
+  global: {
+    windowMs: 15 * 60 * 1000,
+    max: 100,
+    message: { error: 'Limite de requisições excedido', message: 'Por favor, tente novamente mais tarde.' }
+  },
+  api: {
+    windowMs: 5 * 60 * 1000,
+    max: 50,
+    message: { error: 'Limite de requisições da API excedido', message: 'Por favor, tente novamente mais tarde.' }
+  },
+  auth: {
+    windowMs: 15 * 60 * 1000,
+    max: 10,
+    message: { error: 'Muitas tentativas de autenticação', message: 'Você excedeu o limite de tentativas de autenticação.' }
+  }
+};

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexusPay Dashboard</title>
+    
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A complete and fully functional global payment platform with a robust affiliate system, powerful integrations, webhook system, and a comprehensive API for developers. Features a modern dark UI with real-time analytics." />
+    <meta name="keywords" content="NexusPay, global payment platform, affiliate system, integrations, webhook, API, developers, dark UI, real-time analytics, payment gateway, saas, PWA" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NexusPay Dashboard" />
+    <meta property="og:description" content="A complete and fully functional global payment platform with a robust affiliate system, powerful integrations, and a comprehensive API for developers." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="NexusPay Dashboard" />
+    <meta property="twitter:description" content="A complete and fully functional global payment platform with a robust affiliate system, powerful integrations, and a comprehensive API for developers." />
+
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.547.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0",
+    "vite": "https://aistudiocdn.com/vite@^7.1.12",
+    "@tanstack/react-table": "https://aistudiocdn.com/@tanstack/react-table@^8.21.3",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "@tanstack/react-virtual": "https://aistudiocdn.com/@tanstack/react-virtual@^3.13.12"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-950 text-white font-sans overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

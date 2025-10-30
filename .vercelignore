@@ -1,0 +1,9 @@
+# Excluir servidor Express e configs não usadas do deploy Serverless
+server.cjs
+config/
+data/
+database.sqlite
+scripts/
+README.md
+apigeniussocial/
+api-monetizacao-genius-social/

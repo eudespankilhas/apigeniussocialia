@@ -1,0 +1,28 @@
+{
+  "name": "api-monetizacao-genius-social",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "supabase:init": "node scripts/init-supabase-tables.js",
+    "supabase:test": "node scripts/test-supabase-connection.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "@tanstack/react-table": "^8.21.3",
+    "dotenv": "^16.3.1",
+    "lucide-react": "^0.548.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.3",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^7.1.12"
+  }
+}
